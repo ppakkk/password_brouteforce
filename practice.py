@@ -1,8 +1,10 @@
-# 배열의 칸을 3칸으로 지정
-# 첫번째 칸의 값을 0으로 지정
-# 두번째 칸의 값을 0으로 지정
-# 세번째 칸의 값을 0으로 지정
-# 비밀번호에 대입 후 false일 경우 값을 하나씩 늘린다.
 
-list_a=[1,2,3]
-print(list_a)
+for i in range(1000):
+    if(i/10>=10):
+        password=i
+    elif(i/10>=1):
+        password='0'+str(i)
+    else:
+        password='00'+str(i)
+    print(password)
+
